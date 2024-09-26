@@ -10,7 +10,8 @@
 <body>
     <header class="bg-dark text-white text-center p-4">
         <h1>My Online Store</h1>
-        <button class="btn btn-light" data-toggle="modal" data-target="#cartModal">View Cart</button>
+        <input type="text" id="searchInput" class="form-control" placeholder="Search products..." onkeyup="searchProducts()">
+        <button class="btn btn-light mt-2" data-toggle="modal" data-target="#cartModal">View Cart</button>
     </header>
 
     <main class="container my-4">
@@ -30,7 +31,7 @@
 
         <section id="products">
             <h2 class="text-center">Products</h2>
-            <div class="row" id="productList"></div>
+            <div class="product-grid" id="productList"></div>
         </section>
     </main>
 
