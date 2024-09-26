@@ -62,6 +62,22 @@ const products = [
         category: "accessories",
         description: "Spacious and stylish backpack for everyday use.",
         image: "https://via.placeholder.com/250x150?text=Backpack"
+    },
+    {
+        id: 9,
+        name: "Smartwatch",
+        price: 149.99,
+        category: "accessories",
+        description: "Feature-rich smartwatch with fitness tracking.",
+        image: "https://via.placeholder.com/250x150?text=Smartwatch"
+    },
+    {
+        id: 10,
+        name: "Gaming Console",
+        price: 299.99,
+        category: "electronics",
+        description: "Next-gen gaming console with immersive gameplay.",
+        image: "https://via.placeholder.com/250x150?text=Gaming+Console"
     }
 ];
 
@@ -138,6 +154,4 @@ function searchProducts() {
 
 document.addEventListener('DOMContentLoaded', () => {
     displayProducts(products);
-    document.getElementById('categoryFilter').addEventListener('change', filterProducts);
-    document.getElementById('sortOrder').addEventListener('change', filterProducts);
 });
