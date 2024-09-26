@@ -24,14 +24,6 @@ nav ul li {
     margin: 0 15px;
 }
 
-nav a, button {
-    color: white;
-    text-decoration: none;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
 .container {
     width: 90%;
     max-width: 1200px;
@@ -51,6 +43,7 @@ nav a, button {
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
+    padding: 10px;
 }
 
 .product-card:hover {
@@ -61,11 +54,10 @@ nav a, button {
 .product-card img {
     width: 100%;
     height: auto;
-    border-bottom: 2px solid #b89a76; /* Adds a bottom border */
 }
 
 .product-info {
-    padding: 15px;
+    padding: 10px;
 }
 
 .details-btn {
@@ -75,12 +67,6 @@ nav a, button {
     padding: 10px;
     border-radius: 5px;
     transition: background 0.3s;
-    display: block;
-    margin: 10px 0;
-}
-
-.details-btn:hover {
-    background-color: #ffb74d; /* Darker on hover */
 }
 
 footer {
@@ -88,9 +74,6 @@ footer {
     padding: 20px 0;
     background-color: #b89a76;
     color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 button {
