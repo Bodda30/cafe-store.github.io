@@ -1,83 +1,67 @@
 const products = [
     {
         id: 1,
-        name: "Laptop",
-        price: 999.99,
-        category: "electronics",
-        description: "High performance laptop for all your needs.",
-        image: "https://via.placeholder.com/250x150?text=Laptop"
+        name: "Golden Ankh Pendant",
+        price: 29.99,
+        category: "jewelry",
+        description: "A beautiful gold-plated ankh pendant symbolizing life.",
+        image: "https://via.placeholder.com/250x150?text=Ankh"
     },
     {
         id: 2,
-        name: "T-Shirt",
-        price: 19.99,
-        category: "clothing",
-        description: "Comfortable cotton t-shirt available in various sizes.",
-        image: "https://via.placeholder.com/250x150?text=T-Shirt"
+        name: "Pharaoh's Mask",
+        price: 49.99,
+        category: "artifacts",
+        description: "A replica of the famous pharaoh's mask.",
+        image: "https://via.placeholder.com/250x150?text=Pharaoh+Mask"
     },
     {
         id: 3,
-        name: "Headphones",
-        price: 89.99,
-        category: "electronics",
-        description: "Noise-cancelling over-ear headphones.",
-        image: "https://via.placeholder.com/250x150?text=Headphones"
+        name: "Cotton Tunic",
+        price: 19.99,
+        category: "clothing",
+        description: "Comfortable cotton tunic inspired by ancient Egyptian fashion.",
+        image: "https://via.placeholder.com/250x150?text=Tunic"
     },
     {
         id: 4,
-        name: "Wristwatch",
-        price: 199.99,
-        category: "accessories",
-        description: "Stylish wristwatch with leather strap.",
-        image: "https://via.placeholder.com/250x150?text=Wristwatch"
+        name: "Hieroglyphic Wall Art",
+        price: 59.99,
+        category: "artifacts",
+        description: "Decorative wall art featuring authentic hieroglyphs.",
+        image: "https://via.placeholder.com/250x150?text=Wall+Art"
     },
     {
         id: 5,
-        name: "Jeans",
-        price: 49.99,
-        category: "clothing",
-        description: "Classic blue jeans for everyday wear.",
-        image: "https://via.placeholder.com/250x150?text=Jeans"
+        name: "Sphinx Figurine",
+        price: 34.99,
+        category: "artifacts",
+        description: "A beautifully crafted sphinx figurine.",
+        image: "https://via.placeholder.com/250x150?text=Sphinx"
     },
     {
         id: 6,
-        name: "Smartphone",
-        price: 699.99,
-        category: "electronics",
-        description: "Latest model smartphone with high-resolution camera.",
-        image: "https://via.placeholder.com/250x150?text=Smartphone"
+        name: "Papyrus Scroll",
+        price: 14.99,
+        category: "artifacts",
+        description: "An authentic reproduction of an ancient papyrus scroll.",
+        image: "https://via.placeholder.com/250x150?text=Papyrus"
     },
     {
         id: 7,
-        name: "Sneakers",
-        price: 89.99,
-        category: "clothing",
-        description: "Comfortable sneakers for daily wear.",
-        image: "https://via.placeholder.com/250x150?text=Sneakers"
+        name: "Egyptian Jewelry Box",
+        price: 39.99,
+        category: "jewelry",
+        description: "A decorative jewelry box with ancient designs.",
+        image: "https://via.placeholder.com/250x150?text=Jewelry+Box"
     },
     {
         id: 8,
-        name: "Backpack",
-        price: 49.99,
-        category: "accessories",
-        description: "Spacious and stylish backpack for everyday use.",
-        image: "https://via.placeholder.com/250x150?text=Backpack"
-    },
-    {
-        id: 9,
-        name: "Smartwatch",
-        price: 149.99,
-        category: "accessories",
-        description: "Feature-rich smartwatch with fitness tracking.",
-        image: "https://via.placeholder.com/250x150?text=Smartwatch"
-    },
-    {
-        id: 10,
-        name: "Gaming Console",
-        price: 299.99,
-        category: "electronics",
-        description: "Next-gen gaming console with immersive gameplay.",
-        image: "https://via.placeholder.com/250x150?text=Gaming+Console"
+        name: "Sandstone Coaster Set",
+        price: 24.99,
+        category: "artifacts",
+        description: "Set of coasters made from genuine sandstone.",
+        image: "https://via.placeholder.com/250x150?text=Coaster+Set"
     }
 ];
 
