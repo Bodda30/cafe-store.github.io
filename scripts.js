@@ -5,7 +5,7 @@ const products = [
         price: 999.99,
         category: "electronics",
         description: "High performance laptop for all your needs.",
-        image: "https://via.placeholder.com/150"
+        image: "https://via.placeholder.com/250x150?text=Laptop"
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const products = [
         price: 19.99,
         category: "clothing",
         description: "Comfortable cotton t-shirt available in various sizes.",
-        image: "https://via.placeholder.com/150"
+        image: "https://via.placeholder.com/250x150?text=T-Shirt"
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const products = [
         price: 89.99,
         category: "electronics",
         description: "Noise-cancelling over-ear headphones.",
-        image: "https://via.placeholder.com/150"
+        image: "https://via.placeholder.com/250x150?text=Headphones"
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const products = [
         price: 199.99,
         category: "accessories",
         description: "Stylish wristwatch with leather strap.",
-        image: "https://via.placeholder.com/150"
+        image: "https://via.placeholder.com/250x150?text=Wristwatch"
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ const products = [
         price: 49.99,
         category: "clothing",
         description: "Classic blue jeans for everyday wear.",
-        image: "https://via.placeholder.com/150"
+        image: "https://via.placeholder.com/250x150?text=Jeans"
     },
     {
         id: 6,
@@ -45,8 +45,24 @@ const products = [
         price: 699.99,
         category: "electronics",
         description: "Latest model smartphone with high-resolution camera.",
-        image: "https://via.placeholder.com/150"
+        image: "https://via.placeholder.com/250x150?text=Smartphone"
     },
+    {
+        id: 7,
+        name: "Sneakers",
+        price: 89.99,
+        category: "clothing",
+        description: "Comfortable sneakers for daily wear.",
+        image: "https://via.placeholder.com/250x150?text=Sneakers"
+    },
+    {
+        id: 8,
+        name: "Backpack",
+        price: 49.99,
+        category: "accessories",
+        description: "Spacious and stylish backpack for everyday use.",
+        image: "https://via.placeholder.com/250x150?text=Backpack"
+    }
 ];
 
 let cart = [];
@@ -56,10 +72,10 @@ function displayProducts(filteredProducts) {
     productList.innerHTML = '';
     filteredProducts.forEach(product => {
         const productElement = document.createElement('div');
-        productElement.className = 'col-md-4';
+        productElement.className = 'product-card';
         productElement.innerHTML = `
-            <div class="product">
-                <img src="${product.image}" alt="${product.name}" class="img-fluid" />
+            <img src="${product.image}" alt="${product.name}" class="img-fluid" />
+            <div class="product-info">
                 <h3>${product.name}</h3>
                 <p>Price: $${product.price.toFixed(2)}</p>
                 <button class="btn btn-primary" onclick="addToCart(${product.id})">Add to Cart</button>
@@ -112,6 +128,12 @@ function openProductDetails(productId) {
         </body>
         </html>
     `);
+}
+
+function searchProducts() {
+    const query = document.getElementById('searchInput').value.toLowerCase();
+    const filteredProducts = products.filter(product => product.name.toLowerCase().includes(query));
+    displayProducts(filteredProducts);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
