@@ -1,16 +1,98 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2709
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light background */
+    color: #3b3b3b;
+    margin: 0;
+    padding: 0;
+}
 
-\f0\fs24 \cf0 function toggleContent(contentId, button) \{\
-    const content = document.getElementById(contentId);\
-    content.classList.toggle('show');\
-    button.innerText = content.classList.contains('show') ? 'Hide Details' : 'Details';\
-\}\
-\
-function togglePublishForm() \{\
-    const form = document\
+header {
+    background-color: #b89a76; /* Café-like color */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a, button {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.details-btn {
+    background-color: #ffcc80; /* Light café color */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.details-btn:hover {
+    background-color: #ffb74d; /* Darker on hover */
+}
+
+.details {
+    display: none;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #b89a76;
+    color: white;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
 }
