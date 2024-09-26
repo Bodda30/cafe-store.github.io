@@ -128,6 +128,7 @@ function openProductDetails(productId) {
         </body>
         </html>
     `);
+    detailWindow.document.close();
 }
 
 function searchProducts() {
